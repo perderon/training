@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#67d7e8">
+  <title>Результаты</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <main class="stage results-stage" aria-label="Результаты тренажёра">
+    <button class="close-button" type="button" aria-label="Перезапустить тренажёр" title="Начать заново">✕</button>
+    <section class="results-card">
+      <h1>Таблица ответов</h1>
+      <div class="table-wrap">
+        <table class="results-table">
+          <colgroup>
+            <col class="column-number">
+            <col class="column-image">
+            <col class="column-answer">
+            <col class="column-answer">
+            <col class="column-result">
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">№</th>
+              <th scope="col">Картинка</th>
+              <th scope="col">Правильный ответ</th>
+              <th scope="col">Твой ответ</th>
+              <th scope="col">Результат</th>
+            </tr>
+          </thead>
+          <tbody id="answers-body"></tbody>
+        </table>
+      </div>
+      <p class="results-summary" id="results-summary"></p>
+    </section>
+  </main>
+</body>
+</html>
